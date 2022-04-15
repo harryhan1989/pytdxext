@@ -1,0 +1,17 @@
+click
+pandas
+six
+cryptography
+pylint
+pytest
+pypandoc
+gitpython
+prettytable>=2.2.0
+tenacity>=8.0.1
+pandas>=0.23.3
+httpx>=0.18.1
+loguru>=0.5.3
+tqdm>=4.37.0
+click>=6.7
+pyyaml
+py_mini_racer>=0.6.0
