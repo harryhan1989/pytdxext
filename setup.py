@@ -1,5 +1,9 @@
+
+   
 #!/usr/bin/env python
-"""The setup script."""
+
+from setuptools import setup, find_packages
+import os
 
 try:
     from setuptools import find_packages, setup
@@ -12,11 +16,16 @@ def parse_requirements(filename):
     return [line for line in line_iter if line and not line.startswith('#')]
 
 
-with open('README.rst', encoding='utf-8') as readme_file:
-    readme = readme_file.read()
+try:
+    import pypandoc
+    readme = pypandoc.convert('README.md', 'rst')
+    history = pypandoc.convert('HISTORY.md', 'rst')
+except (IOError, ImportError):
+    print(30 * "*")
+    print("Notice, NEED TO INSTALL *pypandoc* TO get full description of package")
+    print(30 * "*")
+    long_description = ''
 
-with open('HISTORY.rst', encoding='utf-8') as history_file:
-    history = history_file.read()
 
 requirements = parse_requirements('requirements.txt')
 test_requirements = requirements

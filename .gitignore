@@ -1,0 +1,10 @@
+logs/
+.eggs
+.eggs/*
+pytdxext.egg-info
+pytdxext.egg-info/*
+dist
+dist/*
+build
+build/*
+__debug_bin
