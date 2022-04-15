@@ -410,7 +410,7 @@ class StdQuotes(BaseQuotes):
 class ExtQuotes(BaseQuotes):
     """ 扩展市场实时行情 """
 
-    bestip = ('112.74.214.43', 7727)
+    # bestip = ('112.74.214.43', 7727)
 
     def __init__(self, bestip=False, timeout=15, **kwargs):
         """ 构造函数
