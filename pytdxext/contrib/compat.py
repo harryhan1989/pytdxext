@@ -1,12 +1,12 @@
 import socket
 import threading
 
-from pytdx.base_socket_client import BaseSocketClient
-from pytdx.base_socket_client import CONNECT_TIMEOUT
-from pytdx.base_socket_client import TrafficStatSocket
-from pytdx.errors import TdxConnectionError
-from pytdx.heartbeat import HqHeartBeatThread
-from pytdx.reader import TdxDailyBarReader
+from pytdxext.pytdx.base_socket_client import BaseSocketClient
+from pytdxext.pytdx.base_socket_client import CONNECT_TIMEOUT
+from pytdxext.pytdx.base_socket_client import TrafficStatSocket
+from pytdxext.pytdx.errors import TdxConnectionError
+from pytdxext.pytdx.heartbeat import HqHeartBeatThread
+from pytdxext.pytdx.reader import TdxDailyBarReader
 
 from pytdxext.logger import logger
 

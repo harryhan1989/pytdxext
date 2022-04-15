@@ -123,7 +123,7 @@ def bestip(console=False, limit=5, sync=True) -> None:
             if data:
                 default['BESTIP'][index] = data[0]
         except RuntimeError as ex:
-            logger.error('请手动运行`python -m mootdx bestip`')
+            logger.error('请手动运行`python -m pytdxext bestip`')
             break
 
     json.dump(default, open(config_, 'w', encoding='utf-8'), indent=2, ensure_ascii=False)

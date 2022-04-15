@@ -237,7 +237,7 @@ def get_config_path(config='config.json'):
     :param config: 配置文件名称
     :return: filename
     """
-    filename = Path.home() / '.mootdx' / config
+    filename = Path.home() / '.pytdxext' / config
     pathname = Path(filename).parent
 
     Path(pathname).exists() or Path(pathname).mkdir(parents=True)

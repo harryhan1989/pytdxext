@@ -1,11 +1,11 @@
 from abc import ABC
 from pathlib import Path
 
-from pytdx.reader import BlockReader
-from pytdx.reader import CustomerBlockReader
-from pytdx.reader import TdxExHqDailyBarReader
-from pytdx.reader import TdxLCMinBarReader
-from pytdx.reader import TdxMinBarReader
+from pytdxext.pytdx.reader import BlockReader
+from pytdxext.pytdx.reader import CustomerBlockReader
+from pytdxext.pytdx.reader import TdxExHqDailyBarReader
+from pytdxext.pytdx.reader import TdxLCMinBarReader
+from pytdxext.pytdx.reader import TdxMinBarReader
 
 from pytdxext import utils
 from pytdxext.consts import TYPE_GROUP, TYPE_FLATS
