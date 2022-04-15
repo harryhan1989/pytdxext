@@ -8,6 +8,6 @@ pytdx由于原项目的作者不再维护了，考虑到自己需要使用该项
 
 # mootdx
 是基于pytdx的应用扩展
-原项目地址： https://github.com/rainx/pytdx
+原项目地址： https://gitee.com/ibopo/mootdx
 
 
