@@ -1,13 +1,13 @@
 # 命令使用说明
 
-`mootdx quotes` 是一个命令行程序，目前功能比较简单，可以用来读取TDX导出的日线行情数据
+`pytdxext quotes` 是一个命令行程序，目前功能比较简单，可以用来读取TDX导出的日线行情数据
 
 使用方法如下：
 
 ```shell
-mootdx quotes --help
+pytdxext quotes --help
 
-Usage: mootdx quotes [OPTIONS]
+Usage: pytdxext quotes [OPTIONS]
 
   读取股票在线行情数据.
 
@@ -24,5 +24,5 @@ Options:
 读取行情并写入到文件: minute.csv
 
 ```shell
-mootdx quotes -s 600000 -a minute -o minute.csv
+pytdxext quotes -s 600000 -a minute -o minute.csv
 ```

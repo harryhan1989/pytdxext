@@ -14,7 +14,7 @@
 ### 01. 读取行情接口
 
 ```python
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 
 reader = Reader.factory(market='std', tdxdir='C:/new_tdx')
 
@@ -34,7 +34,7 @@ reader.fzline(symbol='600036')
 
 ```python
 
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 
 reader = Reader.factory(market='ext', tdxdir='c:/new_tdx')
 reader.daily(symbol='29#A1801')
@@ -47,7 +47,7 @@ reader.daily(symbol='29#A1801')
 分钟线有两种格式，第一种是`.1` `.5` 为后缀的, 还有一种为 `.lc1` `.lc5` 后缀的. 不过不用考虑，接口会自动判断
 
 ```python
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 
 reader = Reader.factory(market='std', tdxdir='c:/new_tdx')
 reader.minute(symbol='000001', suffix='1')  # suffix = 1 一分钟，5 五分钟
@@ -56,7 +56,7 @@ reader.minute(symbol='000001', suffix='1')  # suffix = 1 一分钟，5 五分钟
 扩展数据接口读取方式
 
 ```python
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 
 reader = Reader.factory(market='ext', tdxdir='c:/new_tdx')
 reader.minute(symbol='000001', suffix='1')  # suffix = 1 一分钟，5 五分钟
@@ -69,7 +69,7 @@ reader.minute(symbol='000001', suffix='1')  # suffix = 1 一分钟，5 五分钟
 样例代码：
 
 ```python
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 
 reader = Reader.factory(market='std', tdxdir='c:/new_tdx')
 reader.block(symbol='block_zs', group=False)
@@ -77,7 +77,7 @@ reader.block(symbol='block_zs', group=False)
 
 ```python
 # 分组格式
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 reader = Reader.factory(market='std', tdxdir='c:/new_tdx')
 
 reader.block(symbol='block_zs', group=True)
@@ -88,7 +88,7 @@ reader.block(symbol='block_zs', group=True)
 > 读取自定义板块信息文件夹
 
 ```python
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 
 reader = Reader.factory(market='std', tdxdir='C:/new_tdx')
 
@@ -103,7 +103,7 @@ reader.block_new(group=True)
 
 ```python
 # 写入新板块
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 
 reader = Reader.factory(market='std', tdxdir='C:/new_tdx')
 reader.block_new(name='最优盈利板块', symbol=['600001', '600002', '600003', '600004', ])

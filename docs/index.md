@@ -1,10 +1,10 @@
 # 项目概述
 
-Mootdx 是一款纯 Python 语言开发的类似 TDX 的行情数据接口的实现。
+pytdxext 是一款纯 Python 语言开发的类似 TDX 的行情数据接口的实现。
 
-- 在线文档: [https://mootdx.readthedocs.io](https://mootdx.readthedocs.io)
-- 国内镜像: [https://gitee.com/ibopo/mootdx](https://gitee.com/ibopo/mootdx)
-- 项目仓库: [https://github.com/mootdx/mootdx](https://github.com/mootdx/mootdx)
+- 在线文档: [https://pytdxext.readthedocs.io](https://pytdxext.readthedocs.io)
+- 国内镜像: [https://gitee.com/ibopo/pytdxext](https://gitee.com/ibopo/pytdxext)
+- 项目仓库: [https://github.com/pytdxext/pytdxext](https://github.com/pytdxext/pytdxext)
 
 ## 项目特点
 
@@ -23,7 +23,7 @@ Mootdx 是一款纯 Python 语言开发的类似 TDX 的行情数据接口的实
 ## 快速安装
 
 ```shell
-pip install -U mootdx
+pip install -U pytdxext
 ```
 
 ## 多种运行

@@ -1,13 +1,13 @@
 # 命令行使用说明
 
-`mootdx reader` 是一个命令行程序，目前功能比较简单，可以用来读取TDX导出的日线行情数据
+`pytdxext reader` 是一个命令行程序，目前功能比较简单，可以用来读取TDX导出的日线行情数据
 
 使用方法如下：
 
 ```
-mootdx reader --help
+pytdxext reader --help
 
-Usage: mootdx reader [OPTIONS]
+Usage: pytdxext reader [OPTIONS]
 
   读取股票本地行情数据.
 
@@ -26,7 +26,7 @@ Options:
 `-o` 参数导出数据
 
 ```shell
-mootdx reader --tdxdir ../fixtures -s 600000 -a daily -o dt.csv
+pytdxext reader --tdxdir ../fixtures -s 600000 -a daily -o dt.csv
 
 写入到文件 : dt.csv
 
@@ -37,7 +37,7 @@ mootdx reader --tdxdir ../fixtures -s 600000 -a daily -o dt.csv
 `-o` 参数导出数据
 
 ```shell
-mootdx reader --tdxdir ../fixtures -s 600000 -a minute -o dt.csv
+pytdxext reader --tdxdir ../fixtures -s 600000 -a minute -o dt.csv
 
 写入到文件 : dt.csv
 
@@ -48,7 +48,7 @@ mootdx reader --tdxdir ../fixtures -s 600000 -a minute -o dt.csv
 `-o` 参数导出数据
 
 ```shell
-mootdx reader --tdxdir ../fixtures -s 600000 -a fzline -o dt.csv
+pytdxext reader --tdxdir ../fixtures -s 600000 -a fzline -o dt.csv
 
 写入到文件 : dt.csv
 

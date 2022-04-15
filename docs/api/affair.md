@@ -5,7 +5,7 @@
 实现了历史财务数据列表的读取，使用方式
 
 ```python
-from mootdx.affair import Affair
+from pytdxext.affair import Affair
 
 Affair.files()
 ```
@@ -36,7 +36,7 @@ Out[17]:
 使用上面返回的`filename`字段作为参数即可
 
 ```python
-from mootdx.affair import Affair
+from pytdxext.affair import Affair
 
 Affair.fetch(downdir='output', filename='gpcw20170930.zip')
 ```
@@ -46,7 +46,7 @@ Affair.fetch(downdir='output', filename='gpcw20170930.zip')
 如果您自己管理文件的下载或者本地已经有对应的数据文件，同时支持`.zip`和解压后的`.dat`文件. 如果扩展名不写，则自动判断存在的文件.
 
 ```python
-from mootdx.affair import Affair
+from pytdxext.affair import Affair
 
 data = Affair.parse(downdir='output', filename='gpcw20170930.zip')
 ```
@@ -56,7 +56,7 @@ data = Affair.parse(downdir='output', filename='gpcw20170930.zip')
 代码方式
 
 ```python
-from mootdx.affair import Affair
+from pytdxext.affair import Affair
 
 result = Affair.parse(downdir='output', filename='gpcw20170930.zip')
 
@@ -72,5 +72,5 @@ result.to_excel('gpcw20170930.xls')
 写入到文件 : `gpcw20170930.csv`
 
 ```shell
-mootdx affair -f gpcw20000930.zip -o gpcw20170930.csv
+pytdxext affair -f gpcw20000930.zip -o gpcw20170930.csv
 ```

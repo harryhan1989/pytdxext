@@ -31,8 +31,8 @@
 * 修正兼容性, 目前完全兼容 Python 3.6, 3.7, 3.8, 3.9, 3.10 版本
 
 ### Add
-* 添加交易日历列表数据 (说明文档: https://mootdx.readthedocs.io/zh_CN/latest/extras/#04)
-* 增加新浪复权因子数据接口，并对TDX行情接口数据进行复权计算(较慢, 已加缓存机制, 暂时过渡使用) (对应文档: https://mootdx.readthedocs.io/zh_CN/latest/quote1)
+* 添加交易日历列表数据 (说明文档: https://pytdxext.readthedocs.io/zh_CN/latest/extras/#04)
+* 增加新浪复权因子数据接口，并对TDX行情接口数据进行复权计算(较慢, 已加缓存机制, 暂时过渡使用) (对应文档: https://pytdxext.readthedocs.io/zh_CN/latest/quote1)
 
 ## v0.7.21 (2021-09-24)
 

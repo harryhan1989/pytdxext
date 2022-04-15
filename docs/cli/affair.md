@@ -3,9 +3,9 @@
 ## 00. 命令行的帮助选项
 
 ```shell
-mootdx affair --help
+pytdxext affair --help
 
-Usage: mootdx affair [OPTIONS]
+Usage: pytdxext affair [OPTIONS]
 
   财务文件下载&解析.
 
@@ -23,7 +23,7 @@ Options:
 ## 01. 列出所有财务文件
 
 ```shell
-mootdx affair -l
+pytdxext affair -l
 
 +------------------+----------+----------------------------------+
 | filename         | filesize | hash                             |
@@ -45,17 +45,17 @@ mootdx affair -l
 > 文件名由上面方法获取
 
 ```shell
-mootdx affair -f gpcw20191231.zip
+pytdxext affair -f gpcw20191231.zip
 
 Downloaded 165, Total is 0
 ```
 
 ## 03. 批量下载全部文件
 
-> 增加快捷方式 `mootdx affair -a`
+> 增加快捷方式 `pytdxext affair -a`
 
 ```shell
-mootdx affair -f all
+pytdxext affair -f all
 
 Downloaded 165, Total is 0
 Downloaded 30000, Total is 0
@@ -71,7 +71,7 @@ Downloaded 90000, Total is 0
 > 文件名由列表方法获取
 
 ```shell
-mootdx affair -p gpcw20000930.zip
+pytdxext affair -p gpcw20000930.zip
 
         report_date  col1  col2  ...        col313   col314        col315
 code                             ...

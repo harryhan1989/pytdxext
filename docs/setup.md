@@ -3,13 +3,13 @@
 ## 普通安装
 
 ```shell
-pip install mootdx
+pip install pytdxext
 ```
 
 ## 升级版本
 
 ```shell
-pip install -U mootdx
+pip install -U pytdxext
 ```
 
 ## 源码安装
@@ -17,15 +17,15 @@ pip install -U mootdx
 直接远程源码安装
 
 ```shell
-pip install git+https://github.com/mootdx/mootdx.git
+pip install git+https://github.com/pytdxext/pytdxext.git
 ```
 
 或下载后手动安装
 
 ```shell
-git clone https://github.com/mootdx/mootdx.git
+git clone https://github.com/pytdxext/pytdxext.git
 
-cd mootdx
+cd pytdxext
 
 python setup.py install
 ```

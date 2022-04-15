@@ -1,16 +1,16 @@
 ## 01. 查看命令帮助
 
 ```shell
-mootdx bestip --help
+pytdxext bestip --help
 
-Usage: mootdx bestip [OPTIONS]
+Usage: pytdxext bestip [OPTIONS]
 
   测试行情服务器.
 
 Options:
   -l, --limit TEXT   显示最快前几个，默认 5.
   -t, --tofile TEXT  将数据输出到文件.
-  -w, --write        将最优服务器IP写入配置文件 ~/.mootdx/config.json.
+  -w, --write        将最优服务器IP写入配置文件 ~/.pytdxext/config.json.
   -v, --verbose
   --help             Show this message and exit.
 
@@ -21,7 +21,7 @@ Options:
 测试最优服务器IP，参数说明
 
 ```shell
-mootdx bestip -v
+pytdxext bestip -v
 
 124.160.88.183,7709 验证失败.
 218.85.139.19,7709 验证失败.
@@ -43,7 +43,7 @@ mootdx bestip -v
 测试命令结果，建议时常测试并加`-w`参数写入配置文件
 
 ```shell
-mootdx bestip -v -w
+pytdxext bestip -v -w
 
 124.160.88.183,7709 验证失败.
 218.85.139.19,7709 验证失败.

@@ -9,7 +9,7 @@
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.markets()
@@ -29,7 +29,7 @@ client.markets()
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.instrument(start=0, offset=100)
@@ -43,7 +43,7 @@ client.instruments()
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.instrument_count()
@@ -60,7 +60,7 @@ client.instrument_count()
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.quote(market=47, symbol="IF1709")
@@ -79,7 +79,7 @@ client.quote(symbol="47#IF1709")
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.minute(market=47, symbol='IF1709')
@@ -98,7 +98,7 @@ client.minute(symbol="47#IF1709")
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.minutes(market=47, symbol='IF1709')
@@ -111,7 +111,7 @@ client.minutes(symbol="47#IF1709")
 
 ** 参数说明: **
 
-- frequency: K线周期参考 `mootdx.consts`
+- frequency: K线周期参考 `pytdxext.consts`
 - market: 市场代码. 场ID可以通过 `markets` 方法获得
 - symbol: 证券代码
 - start: 起始位置
@@ -120,8 +120,8 @@ client.minutes(symbol="47#IF1709")
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
-from mootdx.consts import KLINE_DAILY
+from pytdxext.quotes import Quotes
+from pytdxext.consts import KLINE_DAILY
 
 client = Quotes.factory(market='ext')
 client.bars(frequency=KLINE_DAILY, market=47, symbol="47#IF1709", start=0, offset=100)
@@ -140,7 +140,7 @@ client.bars(frequency=KLINE_DAILY, symbol="47#IF1709", start=0, offset=100)
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.transaction(31, "00020")
@@ -156,7 +156,7 @@ client.transaction("31#00020")
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.transaction(market=31, symbol='00020')
@@ -178,7 +178,7 @@ client.transaction("31#00020")
 ** 调用方法：**
 
 ```python
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 client = Quotes.factory(market='ext')
 client.transactions(market=47, symbol='IFL0', date='20170810', start=1800)
