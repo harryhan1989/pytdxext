@@ -1,5 +1,5 @@
 site_name: PYTDXEXT
-site_description: 基于 Mootdx以及Mootdx的源码扩展(由于pytdx作者已经不再维护,本项目主要目的是持续维护pytdx源码),考虑到mootdx对pytdx的二次封装更好用,所以本项目的核心入口接口全部使用mootdx,而pytdx的核心接口将不直接开放出来。
+site_description: 基于pytdx1.7.2以及Mootdx0.8.10的源码扩展(由于pytdx作者已经不再维护,本项目主要目的是持续维护pytdx源码),考虑到mootdx对pytdx的二次封装更好用,所以本项目的核心入口接口全部使用mootdx,而pytdx的核心接口将不直接开放出来,在此非常感谢以上两个项目作者。
 
 theme: readthedocs
 

@@ -14,9 +14,9 @@ import pandas as pd
 from py_mini_racer import py_mini_racer
 from tenacity import stop_after_attempt, wait_fixed, retry
 
-from mootdx import get_config_path
-from mootdx.consts import return_last_value
-from mootdx.logger import logger
+from pytdxext import get_config_path
+from pytdxext.consts import return_last_value
+from pytdxext.logger import logger
 
 hk_js_decode = """
 function d(t) {

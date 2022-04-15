@@ -8,10 +8,10 @@ import pandas as pd
 from pandas import DataFrame
 from tqdm import tqdm
 
-from mootdx.consts import MARKET_SH, MARKET_BJ
-from mootdx.consts import MARKET_SZ
-from mootdx.logger import logger
-from mootdx.utils.adjust import to_adjust
+from pytdxext.consts import MARKET_SH, MARKET_BJ
+from pytdxext.consts import MARKET_SZ
+from pytdxext.logger import logger
+from pytdxext.utils.adjust import to_adjust
 
 
 def get_stock_markets(symbols=None):
@@ -155,7 +155,7 @@ def to_data(v, **kwargs):
         result = pd.DataFrame(data=[])
 
     if adjust and adjust in ['qfq', 'hfq'] and symbol:
-        from mootdx.utils.adjust import fq_factor
+        from pytdxext.utils.adjust import fq_factor
         result = to_adjust(result, symbol=symbol, adjust=adjust)
 
     if "datetime" in result.columns:

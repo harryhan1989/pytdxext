@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from mootdx.logger import logger
+from pytdxext.logger import logger
 
 
 def txt2csv(infile: str, outfile: str = None) -> pd.DataFrame:

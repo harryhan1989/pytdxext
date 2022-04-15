@@ -8,7 +8,7 @@ import httpx
 import pandas as pd
 from tenacity import stop_after_attempt, wait_fixed, retry
 
-from mootdx.consts import return_last_value
+from pytdxext.consts import return_last_value
 
 
 @retry(wait=wait_fixed(2), retry_error_callback=return_last_value, stop=stop_after_attempt(5))

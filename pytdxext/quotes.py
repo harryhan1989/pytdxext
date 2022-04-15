@@ -10,13 +10,13 @@ from tenacity import retry_if_result
 from tenacity import stop_after_attempt
 from tqdm import tqdm
 
-from mootdx import config
-from mootdx import server
-from mootdx.consts import MARKET_SH, return_last_value
-from mootdx.logger import logger
-from mootdx.utils import get_stock_market
-from mootdx.utils import get_stock_markets
-from mootdx.utils import to_data
+from pytdxext import config
+from pytdxext import server
+from pytdxext.consts import MARKET_SH, return_last_value
+from pytdxext.logger import logger
+from pytdxext.utils import get_stock_market
+from pytdxext.utils import get_stock_markets
+from pytdxext.utils import to_data
 
 
 class Quotes(object):

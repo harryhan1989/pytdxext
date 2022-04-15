@@ -34,7 +34,7 @@
 
 import pandas as pd
 
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 
 def calc_fuquan_use_fenhong(df, df_fenhong):

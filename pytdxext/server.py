@@ -5,12 +5,12 @@ import socket
 import time
 from functools import partial
 
-from mootdx.consts import CONFIG
-from mootdx.consts import EX_HOSTS
-from mootdx.consts import GP_HOSTS
-from mootdx.consts import HQ_HOSTS
-from mootdx.logger import logger
-from mootdx.utils import get_config_path
+from pytdxext.consts import CONFIG
+from pytdxext.consts import EX_HOSTS
+from pytdxext.consts import GP_HOSTS
+from pytdxext.consts import HQ_HOSTS
+from pytdxext.logger import logger
+from pytdxext.utils import get_config_path
 
 hosts = {
     'HQ': [{'addr': hs[1], 'port': hs[2], 'time': 0, 'site': hs[0]} for hs in HQ_HOSTS],

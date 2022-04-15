@@ -8,7 +8,7 @@ from pytdx.errors import TdxConnectionError
 from pytdx.heartbeat import HqHeartBeatThread
 from pytdx.reader import TdxDailyBarReader
 
-from mootdx.logger import logger
+from pytdxext.logger import logger
 
 
 class MooTdxDailyBarReader(TdxDailyBarReader):

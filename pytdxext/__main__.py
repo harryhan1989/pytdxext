@@ -4,14 +4,14 @@ from pathlib import Path
 import click
 from prettytable import PrettyTable
 
-from mootdx import __version__
-from mootdx import logger
-from mootdx import server
-from mootdx.affair import Affair
-from mootdx.quotes import Quotes
-from mootdx.reader import Reader
-from mootdx.utils import get_config_path
-from mootdx.utils import to_file
+from pytdxext import __version__
+from pytdxext import logger
+from pytdxext import server
+from pytdxext.affair import Affair
+from pytdxext.quotes import Quotes
+from pytdxext.reader import Reader
+from pytdxext.utils import get_config_path
+from pytdxext.utils import to_file
 
 
 # @click.group()
