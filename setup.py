@@ -4,6 +4,7 @@
 
 from setuptools import setup, find_packages
 import os
+import pypandoc
 
 try:
     from setuptools import find_packages, setup
@@ -17,7 +18,6 @@ def parse_requirements(filename):
 
 
 try:
-    import pypandoc
     readme = pypandoc.convert('README.md', 'rst')
     history = pypandoc.convert('HISTORY.md', 'rst')
 except (IOError, ImportError):
