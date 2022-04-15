@@ -1,4 +1,4 @@
-from mootdx.utils.adjust import fq_factor
+from pytdxext.utils.adjust import fq_factor
 
 
 class TestFactor:

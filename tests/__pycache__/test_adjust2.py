@@ -3,8 +3,8 @@ import unittest
 import pytest
 from loguru import logger
 
-from mootdx.quotes import Quotes
-from mootdx.utils import to_adjust
+from pytdxext.quotes import Quotes
+from pytdxext.utils import to_adjust
 
 
 class TestAdjust2(unittest.TestCase):

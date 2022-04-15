@@ -3,13 +3,13 @@ from unittest import mock
 
 import pytest
 
-from mootdx.consts import MARKET_SH
-from mootdx.consts import MARKET_SZ
-from mootdx.consts import MARKET_BJ
-from mootdx.utils import get_config_path
-from mootdx.utils import get_stock_market
-from mootdx.utils import md5sum
-from mootdx.utils import to_data
+from pytdxext.consts import MARKET_SH
+from pytdxext.consts import MARKET_SZ
+from pytdxext.consts import MARKET_BJ
+from pytdxext.utils import get_config_path
+from pytdxext.utils import get_stock_market
+from pytdxext.utils import md5sum
+from pytdxext.utils import to_data
 
 data = [
     ('600036', MARKET_SH),
@@ -52,19 +52,19 @@ class TestConfigPath(unittest.TestCase):
     def test_platform_windows(self, platform_system):
         platform_system.return_value = 'Windows'
         config = get_config_path(config='config.json')
-        self.assertTrue('/.mootdx/' in config)
+        self.assertTrue('/.pytdxext/' in config)
 
     @mock.patch('platform.system')
     def test_platform_linux(self, platform_system):
         platform_system.return_value = 'Linux'
         config = get_config_path(config='config.json')
-        self.assertTrue('/.mootdx/' in config)
+        self.assertTrue('/.pytdxext/' in config)
 
     @mock.patch('platform.system')
     def test_platform_Darwin(self, platform_system):
         platform_system.return_value = 'Darwin'
         config = get_config_path(config='config.json')
-        self.assertTrue('/.mootdx/' in config)
+        self.assertTrue('/.pytdxext/' in config)
 
 
 if __name__ == '__main__':

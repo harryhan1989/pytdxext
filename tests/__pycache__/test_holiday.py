@@ -1,6 +1,6 @@
 import pytest
 
-from mootdx.utils.holiday import holiday
+from pytdxext.utils.holiday import holiday
 
 
 class TestHoliday:

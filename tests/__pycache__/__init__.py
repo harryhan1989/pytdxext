@@ -1,1 +1,1 @@
-"""Unit test package for mootdx."""
+"""Unit test package for pytdxext."""

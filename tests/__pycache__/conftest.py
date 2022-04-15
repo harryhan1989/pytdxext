@@ -1,7 +1,7 @@
 import pandas
 import pytest
 
-from mootdx.quotes import Quotes
+from pytdxext.quotes import Quotes
 
 
 def is_empty(obj):

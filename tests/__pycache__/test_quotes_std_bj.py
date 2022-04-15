@@ -2,8 +2,8 @@ import unittest
 
 import pytest
 
-from mootdx.logger import logger
-from mootdx.quotes import Quotes
+from pytdxext.logger import logger
+from pytdxext.quotes import Quotes
 
 
 class TestStdQuotes(unittest.TestCase):

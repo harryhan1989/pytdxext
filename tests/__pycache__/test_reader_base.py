@@ -1,6 +1,6 @@
 import unittest
 
-from mootdx.reader import ReaderBase
+from pytdxext.reader import ReaderBase
 
 
 class TestReaderBase(unittest.TestCase):

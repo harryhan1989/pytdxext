@@ -2,7 +2,7 @@ import logging
 import pytest
 from pathlib import Path
 
-from mootdx import config
+from pytdxext import config
 
 
 @pytest.mark.skip
@@ -12,7 +12,7 @@ class TestBestIP:
     @staticmethod
     def setup_class(cls):
         logging.info('setup_class')
-        cls.config = Path.home() / '.mootdx' / 'config.json'
+        cls.config = Path.home() / '.pytdxext' / 'config.json'
         cls.config.exists() and cls.config.unlink()
 
     @staticmethod

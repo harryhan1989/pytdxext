@@ -1,6 +1,6 @@
 import unittest
 
-from mootdx.reader import Reader
+from pytdxext.reader import Reader
 from tests.conftest import is_empty
 
 

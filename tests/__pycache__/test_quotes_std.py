@@ -1,8 +1,8 @@
 import unittest
 
-from mootdx.consts import MARKET_SH
-from mootdx.logger import logger
-from mootdx.quotes import Quotes
+from pytdxext.consts import MARKET_SH
+from pytdxext.logger import logger
+from pytdxext.quotes import Quotes
 
 
 class TestStdQuotes(unittest.TestCase):

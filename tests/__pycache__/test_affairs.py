@@ -2,8 +2,8 @@ import glob
 import unittest
 from pathlib import Path
 
-from mootdx.affair import Affair
-from mootdx.logger import logger
+from pytdxext.affair import Affair
+from pytdxext.logger import logger
 
 
 class TestAffair(unittest.TestCase):

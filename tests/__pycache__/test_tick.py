@@ -2,7 +2,7 @@
 # import pytest
 # from pathlib import Path
 #
-# from mootdx.reader import Reader
+# from pytdxext.reader import Reader
 #
 # tdxdir = 'tests/fixtures'
 #

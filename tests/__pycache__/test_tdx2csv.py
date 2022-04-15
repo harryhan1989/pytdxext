@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from mootdx.tools.tdx2csv import txt2csv, batch
+from pytdxext.tools.tdx2csv import txt2csv, batch
 
 
 class TestTdx2csv(unittest.TestCase):
