@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from pytdx.log import DEBUG, log
+from pytdxext.pytdx.log import DEBUG, log
 import zlib
 import struct
 import sys

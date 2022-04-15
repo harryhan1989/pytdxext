@@ -128,7 +128,7 @@ def download_and_setup_tdx_trade_server(download_path, dll_path, real_trade_dll_
 
     demo_code = """
 import os
-from pytdx.trade import TdxTradeApi
+from pytdxext.pytdx.trade import TdxTradeApi
 api = TdxTradeApi(endpoint="http://{}:{}/api", enc_key=b"{}", enc_iv=b"{}")
 print("---Ping---")
 result = api.ping()
@@ -159,7 +159,7 @@ if result["success"]:
     """.format(bind_ip, bind_port, enc_key, enc_iv)
 
     demo_sample = """
-from pytdx.trade import TdxTradeApi
+from pytdxext.pytdx.trade import TdxTradeApi
 api = TdxTradeApi(endpoint="http://{}:{}/api", enc_key=b"{}", enc_iv=b"{}")
     """.format(bind_ip, bind_port, enc_key, enc_iv)
 

@@ -5,8 +5,8 @@ import pandas as pd
 import os
 
 #import struct
-from pytdx.reader.base_reader import TdxFileNotFoundException, TdxNotAssignVipdocPathException
-from pytdx.reader.base_reader import BaseReader
+from pytdxext.pytdx.reader.base_reader import TdxFileNotFoundException, TdxNotAssignVipdocPathException
+from pytdxext.pytdx.reader.base_reader import BaseReader
 
 """
 读取通达信日线数据

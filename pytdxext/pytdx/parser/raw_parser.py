@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
+from pytdxext.pytdx.parser.base import BaseParser
 
 # Use this parser for testing
 

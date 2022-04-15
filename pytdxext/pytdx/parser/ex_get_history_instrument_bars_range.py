@@ -1,12 +1,12 @@
 # coding=utf-8
 
     
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import struct
 #import hexdump
-from pytdx.log import DEBUG, log
+from pytdxext.pytdx.log import DEBUG, log
 
 class GetHistoryInstrumentBarsRange(BaseParser):
     def __init__(self, *args, **kvargs):
@@ -110,7 +110,7 @@ class GetHistoryInstrumentBarsRange(BaseParser):
 
 if __name__ == '__main__':
     import pprint
-    from pytdx.exhq import TdxExHq_API
+    from pytdxext.pytdx.exhq import TdxExHq_API
     api = TdxExHq_API()
     with api.connect('61.152.107.141', 7727):
         x = api.to_df(api.get_history_instrument_bars_range(74, "BABA", 20170613,20170620))

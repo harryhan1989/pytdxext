@@ -2,10 +2,10 @@
 import click
 
 from concurrent.futures import ThreadPoolExecutor
-from pytdx.hq import TdxHq_API
+from pytdxext.pytdx.hq import TdxHq_API
 import datetime
 import time
-from pytdx.util.best_ip import select_best_ip
+from pytdxext.pytdx.util.best_ip import select_best_ip
 
 GET_QUOTES_PER_GROUPS=80
 

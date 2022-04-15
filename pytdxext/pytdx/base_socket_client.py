@@ -14,15 +14,15 @@ if __name__ == '__main__':
     sys.path.insert(0, os.path.dirname(
         os.path.dirname(os.path.realpath(__file__))))
 
-from pytdx.log import DEBUG, log
-from pytdx.errors import TdxConnectionError, TdxFunctionCallError
+from pytdxext.pytdx.log import DEBUG, log
+from pytdxext.pytdx.errors import TdxConnectionError, TdxFunctionCallError
 
 import threading
 import datetime
 import time
-from pytdx.heartbeat import HqHeartBeatThread
+from pytdxext.pytdx.heartbeat import HqHeartBeatThread
 import functools
-from pytdx.parser.raw_parser import RawParser
+from pytdxext.pytdx.parser.raw_parser import RawParser
 
 
 CONNECT_TIMEOUT = 5.000

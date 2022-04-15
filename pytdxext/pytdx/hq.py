@@ -13,28 +13,28 @@ import sys
 import threading
 
 import pandas as pd
-from pytdx.base_socket_client import BaseSocketClient, update_last_ack_time
-from pytdx.heartbeat import HqHeartBeatThread
-from pytdx.log import DEBUG, log
-from pytdx.params import TDXParams
-from pytdx.parser.get_block_info import (GetBlockInfo, GetBlockInfoMeta,
+from pytdxext.pytdx.base_socket_client import BaseSocketClient, update_last_ack_time
+from pytdxext.pytdx.heartbeat import HqHeartBeatThread
+from pytdxext.pytdx.log import DEBUG, log
+from pytdxext.pytdx.params import TDXParams
+from pytdxext.pytdx.parser.get_block_info import (GetBlockInfo, GetBlockInfoMeta,
                                          get_and_parse_block_info)
-from pytdx.parser.get_company_info_category import GetCompanyInfoCategory
-from pytdx.parser.get_company_info_content import GetCompanyInfoContent
-from pytdx.parser.get_finance_info import GetFinanceInfo
-from pytdx.parser.get_history_minute_time_data import GetHistoryMinuteTimeData
-from pytdx.parser.get_history_transaction_data import GetHistoryTransactionData
-from pytdx.parser.get_index_bars import GetIndexBarsCmd
-from pytdx.parser.get_minute_time_data import GetMinuteTimeData
-from pytdx.parser.get_security_bars import GetSecurityBarsCmd
-from pytdx.parser.get_security_count import GetSecurityCountCmd
-from pytdx.parser.get_security_list import GetSecurityList
-from pytdx.parser.get_security_quotes import GetSecurityQuotesCmd
-from pytdx.parser.get_transaction_data import GetTransactionData
-from pytdx.parser.get_xdxr_info import GetXdXrInfo
-from pytdx.parser.get_report_file import GetReportFile
-from pytdx.parser.setup_commands import SetupCmd1, SetupCmd2, SetupCmd3
-from pytdx.util import get_real_trade_date, trade_date_sse
+from pytdxext.pytdx.parser.get_company_info_category import GetCompanyInfoCategory
+from pytdxext.pytdx.parser.get_company_info_content import GetCompanyInfoContent
+from pytdxext.pytdx.parser.get_finance_info import GetFinanceInfo
+from pytdxext.pytdx.parser.get_history_minute_time_data import GetHistoryMinuteTimeData
+from pytdxext.pytdx.parser.get_history_transaction_data import GetHistoryTransactionData
+from pytdxext.pytdx.parser.get_index_bars import GetIndexBarsCmd
+from pytdxext.pytdx.parser.get_minute_time_data import GetMinuteTimeData
+from pytdxext.pytdx.parser.get_security_bars import GetSecurityBarsCmd
+from pytdxext.pytdx.parser.get_security_count import GetSecurityCountCmd
+from pytdxext.pytdx.parser.get_security_list import GetSecurityList
+from pytdxext.pytdx.parser.get_security_quotes import GetSecurityQuotesCmd
+from pytdxext.pytdx.parser.get_transaction_data import GetTransactionData
+from pytdxext.pytdx.parser.get_xdxr_info import GetXdXrInfo
+from pytdxext.pytdx.parser.get_report_file import GetReportFile
+from pytdxext.pytdx.parser.setup_commands import SetupCmd1, SetupCmd2, SetupCmd3
+from pytdxext.pytdx.util import get_real_trade_date, trade_date_sse
 try:
     # Python 3
     from collections.abc import Iterable

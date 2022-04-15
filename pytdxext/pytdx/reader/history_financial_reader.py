@@ -1,7 +1,7 @@
 #coding: utf-8
 
-from pytdx.reader.base_reader import BaseReader
-from pytdx.crawler.history_financial_crawler import HistoryFinancialCrawler
+from pytdxext.pytdx.reader.base_reader import BaseReader
+from pytdxext.pytdx.crawler.history_financial_crawler import HistoryFinancialCrawler
 
 # 使用 history_financial_cralwer 里面的HistoryFinancialCrawler完成此功能，这个reader仅对其做简单的封装
 

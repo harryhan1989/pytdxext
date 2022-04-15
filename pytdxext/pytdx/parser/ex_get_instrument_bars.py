@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import six
 import struct
@@ -91,8 +91,8 @@ class GetInstrumentBars(BaseParser):
 
 
 if __name__ == '__main__':
-    from pytdx.exhq import TdxExHq_API
-    from pytdx.params import TDXParams
+    from pytdxext.pytdx.exhq import TdxExHq_API
+    from pytdxext.pytdx.params import TDXParams
     api = TdxExHq_API()
     # cmd = GetInstrumentBars(api)
     # cmd.setParams(4, 7, "10000843", 0, 10)

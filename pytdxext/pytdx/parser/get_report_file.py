@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import struct
 import six
@@ -35,7 +35,7 @@ class GetReportFile(BaseParser):
 
 
 if __name__ == "__main__":
-    from pytdx.hq import TdxHq_API
+    from pytdxext.pytdx.hq import TdxHq_API
     api = TdxHq_API()
     api.need_setup = False
     # calc.tdx.com.cn, calc2.tdx.com.cn

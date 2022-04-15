@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price, get_time
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price, get_time
 from collections import OrderedDict
 import struct
 import six
@@ -57,7 +57,7 @@ class GetHistoryTransactionData(BaseParser):
 
 
 if __name__ == '__main__':
-    from pytdx.hq import TdxHq_API
+    from pytdxext.pytdx.hq import TdxHq_API
     api = TdxHq_API()
     with api.connect():
         print(api.to_df(api.get_history_transaction_data(0, '000001', 0, 10, 20170811)))

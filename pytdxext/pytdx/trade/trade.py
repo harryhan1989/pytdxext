@@ -14,7 +14,7 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 try:
-    from pytdx.log import log
+    from pytdxext.pytdx.log import log
 except ImportError:
     log = lambda x:None
 

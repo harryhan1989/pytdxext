@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from struct import calcsize, unpack
-from pytdx.crawler.base_crawler import BaseCralwer
+from pytdxext.pytdx.crawler.base_crawler import BaseCralwer
 import shutil
 import tempfile
 import random
@@ -28,7 +28,7 @@ class HistoryFinancialListCrawler(BaseCralwer):
         return "https://gitee.com/yutiansut/QADATA/raw/master/financial/content.txt"
     
     def get_content(self, reporthook=None, path_to_download=None, proxies=None, chunksize=1024 * 50, *args, **kwargs):
-        from pytdx.hq import TdxHq_API
+        from pytdxext.pytdx.hq import TdxHq_API
         api = TdxHq_API()
         api.need_setup = False
         # calc.tdx.com.cn, calc2.tdx.com.cn
@@ -81,7 +81,7 @@ class HistoryFinancialCrawler(BaseCralwer):
         else:
             filesize = 0
 
-        from pytdx.hq import TdxHq_API
+        from pytdxext.pytdx.hq import TdxHq_API
         api = TdxHq_API()
         api.need_setup = False
         # calc.tdx.com.cn, calc2.tdx.com.cn
@@ -168,7 +168,7 @@ class HistoryFinancialCrawler(BaseCralwer):
 
 if __name__ == '__main__':
     import pandas as pd
-    from pytdx.crawler.base_crawler import demo_reporthook
+    from pytdxext.pytdx.crawler.base_crawler import demo_reporthook
     crawler = HistoryFinancialListCrawler()
     #
     list_data = crawler.fetch_and_parse(reporthook=demo_reporthook)

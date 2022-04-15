@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import struct
 import six
@@ -129,7 +129,7 @@ class GetFinanceInfo(BaseParser):
 
 if __name__ == '__main__':
     import pprint
-    from pytdx.hq import TdxHq_API
+    from pytdxext.pytdx.hq import TdxHq_API
     api = TdxHq_API()
     with api.connect():
         pprint.pprint(api.get_finance_info(0, "000166"))

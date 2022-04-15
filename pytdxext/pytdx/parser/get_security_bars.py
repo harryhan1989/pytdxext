@@ -1,8 +1,8 @@
 # coding=utf-8
 
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import struct
 import six

@@ -1,5 +1,5 @@
 # utf-8
-from pytdx.log import DEBUG, log
+from pytdxext.pytdx.log import DEBUG, log
 from functools import partial
 import time
 
@@ -140,9 +140,9 @@ class TdxHqPool_API(object):
 
 if __name__ == '__main__':
 
-    from pytdx.hq import TdxHq_API
-    from pytdx.pool.ippool import AvailableIPPool
-    from pytdx.config.hosts import hq_hosts
+    from pytdxext.pytdx.hq import TdxHq_API
+    from pytdxext.pytdx.pool.ippool import AvailableIPPool
+    from pytdxext.pytdx.config.hosts import hq_hosts
     import random
     import logging
     import pprint

@@ -3,8 +3,8 @@
 # by yutianst
 
 import datetime
-from pytdx.hq import TdxHq_API
-from pytdx.exhq import TdxExHq_API
+from pytdxext.pytdx.hq import TdxHq_API
+from pytdxext.pytdx.exhq import TdxExHq_API
 
 stock_ip = [{'ip': '106.120.74.86', 'port': 7711, 'name': '北京行情主站1'},
  {'ip': '113.105.73.88', 'port': 7709, 'name': '深圳行情主站'},

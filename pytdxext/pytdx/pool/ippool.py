@@ -3,7 +3,7 @@
 import random
 import threading
 from functools import partial
-from pytdx.log import DEBUG, log
+from pytdxext.pytdx.log import DEBUG, log
 import time
 from collections import OrderedDict
 
@@ -135,8 +135,8 @@ class AvailableIPPool(BaseIPPool):
 
 
 if __name__ == "__main__":
-    from pytdx.hq import TdxHq_API
-    from pytdx.config.hosts import hq_hosts
+    from pytdxext.pytdx.hq import TdxHq_API
+    from pytdxext.pytdx.config.hosts import hq_hosts
     import logging
     log.setLevel(logging.DEBUG)
     ch = logging.StreamHandler()

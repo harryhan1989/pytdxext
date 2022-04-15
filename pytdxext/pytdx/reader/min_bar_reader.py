@@ -4,8 +4,8 @@ from __future__ import unicode_literals, division
 import pandas as pd
 import os
 
-from pytdx.reader.base_reader import TdxFileNotFoundException, TdxNotAssignVipdocPathException
-from pytdx.reader.base_reader import BaseReader
+from pytdxext.pytdx.reader.base_reader import TdxFileNotFoundException, TdxNotAssignVipdocPathException
+from pytdxext.pytdx.reader.base_reader import BaseReader
 from collections import OrderedDict
 
 """

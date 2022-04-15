@@ -1,4 +1,4 @@
-from pytdx.trade.trade import TdxTradeApi
+from pytdxext.pytdx.trade.trade import TdxTradeApi
 
 __all__ = [
     'TdxTradeApi',

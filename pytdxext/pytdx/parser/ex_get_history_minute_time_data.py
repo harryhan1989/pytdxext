@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import struct
 
@@ -46,7 +46,7 @@ class GetHistoryMinuteTimeData(BaseParser):
 
 
 if __name__ == '__main__':
-    from pytdx.exhq import TdxExHq_API
+    from pytdxext.pytdx.exhq import TdxExHq_API
     api = TdxExHq_API()
     cmd = GetHistoryMinuteTimeData(api)
     cmd.setParams(8, "10000843", 20180811)

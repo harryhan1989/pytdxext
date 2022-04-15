@@ -1,8 +1,8 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.reader.block_reader import BlockReader,BlockReader_TYPE_FLAT
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.reader.block_reader import BlockReader,BlockReader_TYPE_FLAT
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import struct
 import six
@@ -67,7 +67,7 @@ def get_and_parse_block_info(client, blockfile):
 
 
 if __name__ == '__main__':
-    from pytdx.hq import TdxHq_API
+    from pytdxext.pytdx.hq import TdxHq_API
     api = TdxHq_API()
     with api.connect():
         # ret = api.get_block_info("block_zs.dat", 0, 100)

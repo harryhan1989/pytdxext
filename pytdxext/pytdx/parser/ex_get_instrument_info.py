@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price
 from collections import OrderedDict
 import struct
 
@@ -58,7 +58,7 @@ class GetInstrumentInfo(BaseParser):
         return result
 
 if __name__ == '__main__':
-    from pytdx.exhq import TdxExHq_API
+    from pytdxext.pytdx.exhq import TdxExHq_API
     api = TdxExHq_API()
     api.connect('121.14.110.210', 7727)
     ret = api.get_instrument_info(200, 100)

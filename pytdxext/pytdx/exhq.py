@@ -13,26 +13,26 @@ import pandas as pd
 if __name__ == '__main__':
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
-from pytdx.log import DEBUG, log
-from pytdx.parser.ex_setup_commands import ExSetupCmd1
-from pytdx.parser.ex_get_markets import GetMarkets
-from pytdx.parser.ex_get_instrument_count import GetInstrumentCount
-from pytdx.parser.ex_get_instrument_quote import GetInstrumentQuote
-from pytdx.parser.ex_get_minute_time_data import GetMinuteTimeData
-from pytdx.parser.ex_get_history_minute_time_data import GetHistoryMinuteTimeData
-from pytdx.parser.ex_get_transaction_data import GetTransactionData
-from pytdx.parser.ex_get_history_transaction_data import GetHistoryTransactionData
-from pytdx.parser.ex_get_instrument_bars import GetInstrumentBars
-from pytdx.parser.ex_get_instrument_info import GetInstrumentInfo
-from pytdx.parser.ex_get_history_instrument_bars_range import GetHistoryInstrumentBarsRange
-from pytdx.parser.ex_get_instrument_quote_list import GetInstrumentQuoteList
+from pytdxext.pytdx.log import DEBUG, log
+from pytdxext.pytdx.parser.ex_setup_commands import ExSetupCmd1
+from pytdxext.pytdx.parser.ex_get_markets import GetMarkets
+from pytdxext.pytdx.parser.ex_get_instrument_count import GetInstrumentCount
+from pytdxext.pytdx.parser.ex_get_instrument_quote import GetInstrumentQuote
+from pytdxext.pytdx.parser.ex_get_minute_time_data import GetMinuteTimeData
+from pytdxext.pytdx.parser.ex_get_history_minute_time_data import GetHistoryMinuteTimeData
+from pytdxext.pytdx.parser.ex_get_transaction_data import GetTransactionData
+from pytdxext.pytdx.parser.ex_get_history_transaction_data import GetHistoryTransactionData
+from pytdxext.pytdx.parser.ex_get_instrument_bars import GetInstrumentBars
+from pytdxext.pytdx.parser.ex_get_instrument_info import GetInstrumentInfo
+from pytdxext.pytdx.parser.ex_get_history_instrument_bars_range import GetHistoryInstrumentBarsRange
+from pytdxext.pytdx.parser.ex_get_instrument_quote_list import GetInstrumentQuoteList
 
 
-from pytdx.params import TDXParams
+from pytdxext.pytdx.params import TDXParams
 
 import threading
 import datetime
-from pytdx.base_socket_client import BaseSocketClient, update_last_ack_time
+from pytdxext.pytdx.base_socket_client import BaseSocketClient, update_last_ack_time
 
 
 """

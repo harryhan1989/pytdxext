@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price, get_time
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price, get_time
 from collections import OrderedDict
 import struct
 import six
@@ -113,7 +113,7 @@ class GetTransactionData(BaseParser):
 
 
 if __name__ == "__main__":
-    from pytdx.exhq import TdxExHq_API
+    from pytdxext.pytdx.exhq import TdxExHq_API
 
     api = TdxExHq_API()
     with api.connect('121.14.110.210', 7727):

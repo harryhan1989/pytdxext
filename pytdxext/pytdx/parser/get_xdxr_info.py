@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
-from pytdx.helper import get_datetime, get_volume, get_price, get_time
+from pytdxext.pytdx.parser.base import BaseParser
+from pytdxext.pytdx.helper import get_datetime, get_volume, get_price, get_time
 from collections import OrderedDict
 import struct
 import six
@@ -154,8 +154,8 @@ class GetXdXrInfo(BaseParser):
 
 if __name__ == '__main__':
 
-    from pytdx.util.best_ip import select_best_ip
-    from pytdx.hq import TdxHq_API
+    from pytdxext.pytdx.util.best_ip import select_best_ip
+    from pytdxext.pytdx.hq import TdxHq_API
     api = TdxHq_API()
     with api.connect():
         # 11 扩缩股

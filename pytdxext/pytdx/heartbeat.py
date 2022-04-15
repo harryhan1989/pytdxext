@@ -2,7 +2,7 @@
 
 from threading import Thread
 import random
-from pytdx.log import DEBUG, log
+from pytdxext.pytdx.log import DEBUG, log
 import time
 
 # 参考 :https://stackoverflow.com/questions/6524459/stopping-a-thread-after-a-certain-amount-of-time

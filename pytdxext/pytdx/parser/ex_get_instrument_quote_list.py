@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from pytdx.parser.base import BaseParser
+from pytdxext.pytdx.parser.base import BaseParser
 from collections import OrderedDict
 import struct
 """
@@ -181,7 +181,7 @@ class GetInstrumentQuoteList(BaseParser):
 
 
 if __name__ == '__main__':
-    from pytdx.exhq import TdxExHq_API
+    from pytdxext.pytdx.exhq import TdxExHq_API
 
     api = TdxExHq_API()
     with api.connect('119.97.142.130', 7721):

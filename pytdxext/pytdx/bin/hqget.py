@@ -11,9 +11,9 @@ import pprint
 if __name__ == '__main__':
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__)))))
 
-from pytdx.hq import TdxHq_API
-from pytdx.params import TDXParams
-from pytdx.config.hosts import hq_hosts
+from pytdxext.pytdx.hq import TdxHq_API
+from pytdxext.pytdx.params import TDXParams
+from pytdxext.pytdx.config.hosts import hq_hosts
 import pandas as pd
 import pickle
 from functools import reduce
