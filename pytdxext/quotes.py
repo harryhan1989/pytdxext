@@ -38,12 +38,13 @@ class BaseQuotes(object):
     client = None
     bestip = None
 
-    def __init__(self, bestip: bool = False, timeout: int = None, quiet=False, **kwargs) -> None:
+    def __init__(self, bestip: bool = False, forceip=None, timeout: int = None, quiet=False, **kwargs) -> None:
 
         quiet and logger.remove()
 
         logger.debug(f'bestip=>{bestip}')
-        bestip and server.bestip()
+        if forceip is not None:
+            bestip and server.bestip()
 
         logger.debug(f'timeout=>{timeout}')
         self.timeout = timeout if timeout else 15
@@ -95,7 +96,7 @@ def check_empty(value):
 class StdQuotes(BaseQuotes):
     """ 股票市场实时行情 """
 
-    def __init__(self, bestip=False, timeout=15, **kwargs):
+    def __init__(self, bestip=False, forceip=None, timeout=15, **kwargs):
         """ 构造函数
 
         :param bestip:  最佳 IP
@@ -103,18 +104,21 @@ class StdQuotes(BaseQuotes):
         :param kwargs:  可变参数
         """
 
-        super(StdQuotes, self).__init__(bestip=bestip, timeout=timeout, **kwargs)
+        super(StdQuotes, self).__init__(bestip=bestip,forceip=forceip, timeout=timeout, **kwargs)
 
-        try:
-            config.get('SERVER').get('HQ')[0]
-        except ValueError as ex:
-            logger.warning(ex)
-        finally:
-            default = config.get('SERVER').get('HQ')[0]
-            self.bestip = config.get('BESTIP').get('HQ', default)
+        if forceip is not None:
+            self.bestip=forceip
+        else:
+            try:
+                config.get('SERVER').get('HQ')[0]
+            except ValueError as ex:
+                logger.warning(ex)
+            finally:
+                default = config.get('SERVER').get('HQ')[0]
+                self.bestip = config.get('BESTIP').get('HQ', default)
 
-        if kwargs.get('quiet'):
-            del kwargs['quiet']
+            if kwargs.get('quiet'):
+                del kwargs['quiet']
 
         self.client = TdxHq_API(raise_exception=False, **kwargs)
         self.client.connect(*self.bestip)
