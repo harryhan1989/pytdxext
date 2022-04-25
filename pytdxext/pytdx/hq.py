@@ -228,10 +228,12 @@ if __name__ == '__main__':
     import pprint
 
     api = TdxHq_API()
-    if api.connect('120.79.60.82', 7709):
-        data = api.get_history_minute_time_data(
-             TDXParams.MARKET_SH, '600036', 20110209)
-        pprint.pprint(data)
+    if api.connect('117.34.114.30', 7709):
+        symbol = api.get_security_list(market=44,start=0)
+        print(symbol)
+        # data = api.get_history_minute_time_data(
+        #      TDXParams.MARKET_SH, '600036', 20110209)
+        # pprint.pprint(data)
         # log.info("获取股票行情")
         # stocks = api.get_security_quotes([(0, "000001"), (1, "600300")])
         # pprint.pprint(stocks)
