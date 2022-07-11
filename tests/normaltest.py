@@ -19,8 +19,10 @@ from pytdxext import consts
 ips=['106.14.201.131']
 for ip in ips:
     print(ip)
-    client = Quotes.factory(market='std',forceip=[ip,7709], timeout=2)
-    data = client.transactions(symbol='600519',start=0, offset=2000,date=20220401)
+    # client = Quotes.factory(market='std',forceip=[ip,7709], timeout=2)
+    # data = client.transactions(market=0,symbol='000001',start=0, offset=2000,date=20220401)
+    client = Quotes.factory(market='std')
+    data = client.quotes(symbol=["000001", "600300"])
     print(data)
 # print(len(data))
 # print(data['vol'].sum())
